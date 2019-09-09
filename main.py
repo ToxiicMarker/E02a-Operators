@@ -108,6 +108,8 @@ def concat(s1,s2):
     list2 = s2
     list3 = list1 + list2
     toReturn = list3
+
+    #aka toReturn = s1 + s2
     return toReturn
 
 def whichChar(s,a):
@@ -115,6 +117,7 @@ def whichChar(s,a):
     Returns the character at position a of string s
     '''
     toReturn = ''
+    toReturn = s[a]
     # add your code here
     return toReturn
 
@@ -123,6 +126,7 @@ def substr(s,a1,a2):
     Returns a substring of s (from position a1 to a2)
     '''
     toReturn = ''
+    toReturn = s[a1:a2]
     # add your code here
     return toReturn
 
@@ -131,7 +135,8 @@ def reverseStr(s):
     Returns a string which is a reversed version of s
     '''
     toReturn = ''
-    # add your code here
+    # add your code here ::-1
+    toReturn = s[::-1]
     return toReturn
 
 def isIn(l,e):
@@ -139,7 +144,8 @@ def isIn(l,e):
     Returns true if element e is in list l
     '''
     toReturn = ''
-    # add your code here
+    # add your code here 
+    toReturn = e in l
     return toReturn
 
 def randomElement(l):
@@ -147,7 +153,8 @@ def randomElement(l):
     Returns a random element of list l
     '''
     toReturn = ''
-    # add your code here
+    # add your code here 
+    toReturn = random.choice(l)
     return toReturn
 
 def randomNumber():
@@ -156,6 +163,7 @@ def randomNumber():
     '''
     toReturn = 0
     # add your code here
+    toReturn = random.randint(1000,9999)
     return toReturn
 
 def reverseList(l):
@@ -164,6 +172,7 @@ def reverseList(l):
     '''
     toReturn = []
     # add your code here
+    toReturn = l[::-1]
     return toReturn
 
 def shuffleList(l):
@@ -172,6 +181,8 @@ def shuffleList(l):
     '''
     toReturn = []
     # add your code here
+    random.shuffle(l)
+    toReturn = l
     return toReturn
 
 def listUntil(a):
@@ -180,6 +191,8 @@ def listUntil(a):
     '''
     toReturn = []
     # add your code here
+    for i in range (0,a):
+        toReturn.append(i)
     return toReturn
 
 
